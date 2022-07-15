@@ -1,41 +1,37 @@
 .container {
     font-family: Arial;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+
+
 }
 
-.searchIcon {
-    height: 17px;
-    background-color: red;
-    border: solid red 2px;
+.container-about {
+    display: grid;
+    grid-auto-flow: column;
+
 }
 
-.nav-left {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 14px;
+.col-1 {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+
 }
 
-.nav-center {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
+.col-2 {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+
 }
 
-.nav-right {
-    background-color: black;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-end;
-    padding-right: 10px;
-}
+.col-3 {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
 
+}
 
 .logo {
     color: white;
@@ -45,9 +41,6 @@
   
 }
 
-a:link, :visited {
-    color: white;
-}
 
 a:hover {
     color: red;
@@ -61,6 +54,10 @@ body {
     font-family: 'Edu SA Beginner', cursive;
 }
 
+.googleFont2 {
+    font-family: 'Lobster Two', cursive;
+}
+
 p {
     color: white;
     font-size: 12px;
@@ -68,13 +65,4 @@ p {
     text-transform: uppercase;
 }
 
-.footer {
-    background: black;
-    bottom: 0;
-    display: flex;
-    justify-content: space-around;
-    padding: 5px;
-    font-family: Arial;
-    text-transform: uppercase;
-    font-size: 12px;
-}
+
